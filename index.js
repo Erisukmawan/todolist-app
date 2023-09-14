@@ -18,4 +18,6 @@ formTask.addEventListener("submit", (e) => {
     taskList.innerHTML = inputForm.value;
     // appen <li> ke <ul>
     wrapperList.append(taskList);
+    // menghilangkan karakter didalam input form
+    inputForm.value = "";
 });
